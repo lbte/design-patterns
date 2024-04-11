@@ -1,0 +1,8 @@
+{
+  "label": "Creational Patterns",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Creational design patterns provide various object creation mechanisms, enhancing flexibility and code reuse. These patterns include:"
+  }
+}

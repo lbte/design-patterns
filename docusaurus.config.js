@@ -71,13 +71,13 @@ const config = {
       },
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Design Patterns',
+        title: '',
         logo: {
           alt: 'Design Patterns Logo',
           src: 'img/logo.svg',
         },
         items: [
-          {to: '/docs/intro', label: 'Docs', position: 'left'},
+          {to: '/docs/creational-patterns/factory-method', label: 'Design Patterns', position: 'left'},
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/lbte/design-patterns',
