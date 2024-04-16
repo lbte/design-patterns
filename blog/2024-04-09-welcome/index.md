@@ -1,14 +1,16 @@
 ---
-slug: welcome
-title: Welcome
+slug: intro
+title: Intro
 authors: [laura, esteban]
-tags: [welcome, hello]
+tags: [intro, hello, design-patterns]
 ---
 
 Welcome to our repository dedicated to exploring the fascinating world of Design Patterns. Here, we delve deep into various design patterns with the objective of not only learning about them but also applying them with cool and practical examples.
 
 ## What Are Design Patterns?
 Design patterns are proven solutions to recurring problems encountered in software design. They provide a template for solving specific issues in a consistent and efficient manner. By understanding and applying design patterns, developers can improve the structure, flexibility, and maintainability of their code.
+
+<!--truncate-->
 
 ## Objective
 Our primary goal in this repository is to provide comprehensive explanations of different design patterns and demonstrate their usage through engaging examples. Whether you're a beginner looking to understand the basics or an experienced developer aiming to refine your design skills, you'll find valuable insights and resources here.

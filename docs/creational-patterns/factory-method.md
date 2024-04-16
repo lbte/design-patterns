@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+tags: [factory, creational-patterns]
 ---
 
 # Factory method
@@ -28,6 +29,4 @@ So in order to achieve that you should:
 
 ## Example
 
-1. Consider a ``VehicleFactory`` class with a factory method called ``CreateVehicle()``.
-2. Subclasses like ``CarFactory`` and ``BikeFactory`` override ``CreateVehicle()`` to produce specific vehicles.
-3. Clients use ``CreateVehicle()`` to obtain instances of cars or bikes.
+To view a full example and implementation for this method, read the [Factory Method Implementation](/blog/factory) post in our blog.

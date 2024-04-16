@@ -1,0 +1,8 @@
+{
+  "label": "Structural Patterns",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Structural design patterns organize classes and objects to create larger structures, emphasizing relationships and interfaces for modularity and reusability. These patterns include:"
+  }
+}

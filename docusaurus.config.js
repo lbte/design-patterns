@@ -90,11 +90,19 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Patterns',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Creational',
+                to: '/docs/category/creational-patterns',
+              },
+              {
+                label: 'Structural',
+                to: '/docs/category/structural-patterns',
+              },
+              {
+                label: 'Behavioral',
+                to: '/docs/category/behavioral-patterns',
               },
             ],
           },
@@ -124,7 +132,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/lbte/design-patterns',
               },
             ],
           },
@@ -137,6 +145,10 @@ const config = {
         additionalLanguages: ['csharp'],
       },
     }),
+    markdown: {
+      mermaid: true,
+    },
+    themes: ['@docusaurus/theme-mermaid'],
 };
 
 export default config;
