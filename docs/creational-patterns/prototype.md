@@ -42,7 +42,7 @@ or what happens if the car has too many attributes making the code less maintain
 
 ## Definition
 
-The prototype pattern main purpose is to create new objects by copying existing ones, known as prototypes, 
+The prototype's pattern main purpose is to create new objects by copying existing ones, known as prototypes, 
 rather than creating them from scratch. This pattern is particularly useful when the construction of a 
 new object is more efficient by duplicating an existing object's state.
 
