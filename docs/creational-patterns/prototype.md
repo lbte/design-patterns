@@ -6,7 +6,7 @@ tags: [prototype, creational-patterns]
 
 # Prototype
 
-Let's suppose that you have an object car that has some attributes like color, license, model, etc. in this case you have a red car with the license plate `MMX502` and you need to create the same car in another object like a copy `car2` because you need the exact same attributes and change some other attributes like the license plate.
+Let's suppose that you have a car object that has some attributes like color, license, model, etc. in this case you have a red car with the license plate `MMX502` and you need to create the same car in another object like a copy `car2` because you need the exact same attributes and to change some other attributes like the license plate.
 
 You consider to do something like this:
 
