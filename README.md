@@ -10,6 +10,12 @@ $ yarn
 
 ### Local Development
 
+In order to see your local implementations and to test the website, run the following command:
+
+```
+$ npm start
+```
+or
 ```
 $ yarn start
 ```
@@ -19,6 +25,10 @@ This command starts a local development server and opens up a browser window. Mo
 ### Build
 
 ```
+$ npm run build
+```
+or
+```
 $ yarn build
 ```
 
@@ -26,16 +36,4 @@ This command generates static content into the `build` directory and can be serv
 
 ### Deployment
 
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+The project is hosted within GitHub pages, you can access the last version of the website here: [https://lbte.github.io/design-patterns/](https://lbte.github.io/design-patterns/)
