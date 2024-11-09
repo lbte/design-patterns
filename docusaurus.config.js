@@ -13,7 +13,7 @@ const projectName = "design-patterns";
 const config = {
   title: 'Design Patterns',
   tagline: 'Design Patterns are cool',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logo-dark.png',
 
   // Set the production url of your site here
   url: `https://${organizationName}.github.io`,
@@ -74,7 +74,7 @@ const config = {
         title: '',
         logo: {
           alt: 'Design Patterns Logo',
-          src: 'img/logo.svg',
+          src: 'img/logo.png',
         },
         items: [
           {to: '/docs/creational-patterns/factory-method', label: 'Design Patterns', position: 'left'},
