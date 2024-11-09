@@ -1,7 +1,7 @@
 ---
 slug: façade
 title: Façade pattern
-authors: [laura, esteban]
+authors: [esteban]
 tags: [façade, structural-patterns]
 ---
 
@@ -20,12 +20,12 @@ Check all the description and information related to the [Façade Pattern](/docs
 
 Imagine that you want to process multimedia like videos and images using FFmpeg.
 
-During your development you found that your library just executes FFmpeg and run a command, but your clients dont  like this idea because they manually needs to create the command and make all the validations to the file,
-for example you want you Join two videos `intro.mp4` and `ending.mp4` but you need to validate that they have the same codecs, the same resolution, the output file `result.mp4` cannot exists, and the destination path the code has the right permissions.
+During your development you found that your library just executes FFmpeg and run a command, but your clients don't like this idea because they manually need to create the command and make all the validations to the file,
+for example you want you join two videos `intro.mp4` and `ending.mp4` but you need to validate that they have the same codecs, the same resolution, the output file `result.mp4` cannot exists, and the destination path where the program is going to save the file has the right permissions (read and write).
 
 <!--truncate-->
 
-Thats a lot of process, at the end you have a huge pice of code like this:
+That's a long process, at the end you have a huge piece of code like this:
 
 ```csharp
 if (inputFilePaths == null || inputFilePaths.Length == 0)
@@ -84,8 +84,8 @@ if (!string.IsNullOrEmpty(result) && result.Contains("Error:"))
 }
 ```
 
-Thats a lot of code there are too many things to do just for joining videos, and your clients the developers that want to use your library dont expect make everthing,
-they just need to join videos they dont want to know what happens inside your code to do something like that, they just want to use:
+That's a lot of code, there are too many things to do just for joining videos, and your clients, the developers that want to use your library don't expect to make everything,
+they just need to join videos they don't want to know what happens inside your code to do something like that, they just want to use it:
 
 ```csharp
 var paths = new string[] { "G:\\Videos\\intro.mp4", "J:\\Downloads\\ending.mp4" };
@@ -99,7 +99,7 @@ your users don't want to know what the `VideoTranscodingProcessor` contains they
 
 ### Code Implementation
 
-To implement this pattern you have to define your common interface in this case the `IVideoTranscodingProcessor` that's our façade 
+To implement this pattern you have to define your common interface, in this case the `IVideoTranscodingProcessor` that's our façade 
 
 ```csharp
 public interface IVideoTranscodingProcessor
@@ -112,7 +112,7 @@ public interface IVideoTranscodingProcessor
 }
 ```
 
-After that you have to create your implementation of the facade in our example is the `VideoTranscodingProcessor` that has all the logic like validation, calling external services, create the commands and execute the command.
+After that you have to create your implementation of the façade, in our example is the `VideoTranscodingProcessor` that has all the logic like validation, calling external services, creating the commands and executing the commands.
 
 :::note
 Please visit the source code for the implementation of [VideoTranscodingProcessor](https://github.com/egonzalezt/KONMediaProcessor/blob/main/KONMediaProcessor/VideoProcessor/VideoTranscoding/VideoTranscodingProcessor.cs)
@@ -120,7 +120,7 @@ Please visit the source code for the implementation of [VideoTranscodingProcesso
 [Source Code](https://github.com/egonzalezt/KONMediaProcessor/)
 :::
 
-Finally we have the client this is the responsible of calling our façades and calling the methods
+Finally we have the client, which is responsible for calling our façades and calling the methods.
 
 ```csharp
 var serviceCollection = new ServiceCollection();
@@ -201,7 +201,7 @@ classDiagram
 
 ## References
 
-* [Facade](https://refactoring.guru/design-patterns/facade)
+* [Façades](https://refactoring.guru/design-patterns/facade)
 * [FFmpeg](https://ffmpeg.org/)
 * [ffmpeg Documentation](https://ffmpeg.org/ffmpeg.html)
-* [Facade Method Design Pattern](https://www.geeksforgeeks.org/facade-design-pattern-introduction/)
+* [Façades Method Design Pattern](https://www.geeksforgeeks.org/facade-design-pattern-introduction/)
